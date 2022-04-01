@@ -9,18 +9,20 @@ import {Header} from "./components/header/Header.js";
 
 function App() {
     return (
-        <BrowserRouter>
-            <Header/>
-            <div className="container pt-4">
-                <Routes>
-                    <Route path='/' exact element={<Home/>}/>
-                    <Route path='/fire' element={<Fire/>}/>
-                    <Route path='/smoke' element={<Smoke/>}/>
-                    <Route path='/meter' element={<Meter/>}/>
-                    <Route path='/fistf' element={<FirstF/>}/>
-                </Routes>
-            </div>
-        </BrowserRouter>
+        <div className="mh-100">
+            <BrowserRouter>
+                <Header/>
+                <div className="container pt-4">
+                    <Routes>
+                        <Route path='/' exact element={<Home/>}/>
+                        <Route path='/fire' element={<Fire/>}/>
+                        <Route path='/smoke' element={<Smoke/>}/>
+                        <Route path='/meter' element={<Meter/>}/>
+                        <Route path='/fistf' element={<FirstF/>}/>
+                    </Routes>
+                </div>
+            </BrowserRouter>
+        </div>
     )
 }
 

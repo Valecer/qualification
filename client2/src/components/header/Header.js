@@ -3,6 +3,7 @@ import {NavLink} from 'react-router-dom';
 import userimg from '../../image/user.png';
 import {Navbar, Dropdown,Flowbite, DarkThemeToggle, Avatar} from 'flowbite-react';
 
+
 export const Header = () => {
     return (
         <Navbar
@@ -37,7 +38,9 @@ export const Header = () => {
                         Настройки
                     </Dropdown.Item>
                     <Dropdown.Item>
-                        Загрузка снимков
+                        <NavLink to="/upload">
+                            Загрузка снимков
+                        </NavLink>
                     </Dropdown.Item>
                     <Dropdown.Divider />
                     <Dropdown.Item>

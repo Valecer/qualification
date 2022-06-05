@@ -4,7 +4,7 @@ import { Card } from 'flowbite-react';
 
 export const Cards = () => {
     return (
-        <div className="md:flex ">
+        <div className="md:flex space-y-5">
             <Card imgSrc={FFire}>
                 <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                     Гари

@@ -4,6 +4,8 @@ import {Smoke} from "./pages/smoke/Smoke.js";
 import {Meter} from "./pages/meteorologia/Meter.js"
 import {Fire} from "./pages/fire/Fire.js";
 import {Header} from "./components/header/Header.js";
+import {Fouter} from "./components/fouter/Fouter"
+import {Upload} from "./pages/upload/Upload"
 
 function App() {
   return (
@@ -15,10 +17,11 @@ function App() {
             <Route path='/fire' element={<Fire/>}/>
             <Route path='/smoke' element={<Smoke/>}/>
             <Route path='/meter' element={<Meter/>}/>
+            <Route path='upload' element={<Upload/>}/>
         </Routes>
+        <Fouter/>
       </BrowserRouter>
     </div>
-
   );
 }
 

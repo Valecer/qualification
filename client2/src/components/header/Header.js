@@ -1,15 +1,12 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom';
 import userimg from '../../image/user.png';
-import {Navbar, Dropdown,Flowbite, DarkThemeToggle, Avatar} from 'flowbite-react';
+import {Navbar, Dropdown,Flowbite, DarkThemeToggle, Avatar, Button} from 'flowbite-react';
 
 
 export const Header = () => {
     return (
-        <Navbar
-            fluid={true}
-            rounded={true}
-        >
+        <Navbar fluid={true} rounded={true}>
             <Navbar.Brand href="/">
                 <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
                     WildFire
@@ -21,6 +18,7 @@ export const Header = () => {
                         <DarkThemeToggle />
                     </Flowbite>
                 </div>
+                <Navbar.Toggle />
                 <Dropdown
                     arrowIcon={false}
                     inline={true}
@@ -28,14 +26,16 @@ export const Header = () => {
                 >
                     <Dropdown.Header>
                         <span className="block text-sm">
-                            Борисов Марк
+                            Гость
                         </span>
                         <span className="block truncate text-sm font-medium">
-                            mark.borisoff2017@yandex.ru
+                            -
                         </span>
                     </Dropdown.Header>
                     <Dropdown.Item>
-                        Настройки
+                        <NavLink to="/settings">
+                            Настройки
+                        </NavLink>
                     </Dropdown.Item>
                     <Dropdown.Item>
                         <NavLink to="/upload">
@@ -44,10 +44,12 @@ export const Header = () => {
                     </Dropdown.Item>
                     <Dropdown.Divider />
                     <Dropdown.Item>
-                        Выход
+                    <div className="aut-btn space-y-2">
+                    <Button outline={true} gradientDuoTone="purpleToBlue">Регистрация</Button>
+                    <Button outline={true} gradientDuoTone="cyanToBlue">Войти</Button>
+                    </div>
                     </Dropdown.Item>
                 </Dropdown>
-                <Navbar.Toggle />
             </div>
             <Navbar.Collapse>
                 <Navbar.Link active={true}>

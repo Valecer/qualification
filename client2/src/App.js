@@ -17,10 +17,11 @@ function App() {
             <Route path='/fire' element={<Fire/>}/>
             <Route path='/smoke' element={<Smoke/>}/>
             <Route path='/meter' element={<Meter/>}/>
-            <Route path='upload' element={<Upload/>}/>
+            <Route path='/upload' element={<Upload/>}/>
+            <Route path='/settings' element=''/>
         </Routes>
         <Fouter/>
-      </BrowserRouter>
+      </BrowserRouter>    
     </div>
   );
 }

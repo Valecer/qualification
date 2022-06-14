@@ -10,6 +10,7 @@
 
 # production
 /build
+*.tif
 
 # misc
 .DS_Store

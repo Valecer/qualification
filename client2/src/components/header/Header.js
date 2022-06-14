@@ -6,7 +6,7 @@ import {Navbar, Dropdown,Flowbite, DarkThemeToggle, Avatar, Button} from 'flowbi
 
 export const Header = () => {
     return (
-        <Navbar fluid={true} rounded={true}>
+            <Navbar fluid={true} rounded={true}>
             <Navbar.Brand href="/">
                 <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
                     WildFire
@@ -44,10 +44,14 @@ export const Header = () => {
                     </Dropdown.Item>
                     <Dropdown.Divider />
                     <Dropdown.Item>
-                    <div className="aut-btn space-y-2">
-                    <Button outline={true} gradientDuoTone="purpleToBlue">Регистрация</Button>
-                    <Button outline={true} gradientDuoTone="cyanToBlue">Войти</Button>
-                    </div>
+                        <NavLink to="/signup">
+                            <Button outline={true} gradientDuoTone="purpleToBlue">Регистрация</Button>    
+                        </NavLink>   
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                        <NavLink to ="/signin">
+                            <Button outline={true} gradientDuoTone="cyanToBlue">Войти</Button>
+                        </NavLink>
                     </Dropdown.Item>
                 </Dropdown>
             </div>

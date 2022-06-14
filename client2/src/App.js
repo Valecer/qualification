@@ -6,10 +6,12 @@ import {Fire} from "./pages/fire/Fire.js";
 import {Header} from "./components/header/Header.js";
 import {Fouter} from "./components/fouter/Fouter"
 import {Upload} from "./pages/upload/Upload"
+import {Signin} from "./pages/signin/Signin"
+import {Signup} from "./pages/signup/Signup"
 
 function App() {
   return (
-    <div className="md:min-h-screen bg-slate-200 dark:bg-gray-700">
+    <div className="min-h-screen bg-slate-200 dark:bg-gray-700 static">
       <BrowserRouter>
         <Header/>
         <Routes>
@@ -19,6 +21,8 @@ function App() {
             <Route path='/meter' element={<Meter/>}/>
             <Route path='/upload' element={<Upload/>}/>
             <Route path='/settings' element=''/>
+            <Route path='/signin' element={<Signin/>}/>
+            <Route path='/signup' element={<Signup/>}/>
         </Routes>
         <Fouter/>
       </BrowserRouter>    

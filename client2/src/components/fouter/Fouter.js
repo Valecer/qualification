@@ -4,7 +4,7 @@ import {Footer} from 'flowbite-react';
 
 export const Fouter = () => {
     return (
-        <Footer className="static bottom-0">
+            <Footer className="bottom-0 object-bottom lg:fixed">
             <Footer.Copyright
                 href="/"
                 by="WildFire™"
